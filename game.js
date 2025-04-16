@@ -14,7 +14,7 @@ const pipeTopImg = new Image();
 const backgroundImg = new Image();
 const startImg = new Image();
 
-backgroundImg.src = "background.PNG";
+backgroundImg.src = "background.png"; // not .PNG
 birdImg.src = "character.png";
 pipeImg.src = "pipe.png";
 pipeTopImg.src = "pipe.png";
