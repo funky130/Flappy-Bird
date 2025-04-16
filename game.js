@@ -14,11 +14,12 @@ const pipeTopImg = new Image();
 const backgroundImg = new Image();
 const startImg = new Image();
 
+backgroundImg.src = "background.PNG";
 birdImg.src = "character.png";
 pipeImg.src = "pipe.png";
 pipeTopImg.src = "pipe.png";
-backgroundImg.src = "background.PNG";
 startImg.src = "start_screen.png";
+
 
 // Game state (ratios will scale with screen)
 let scale = height / 720; // base scale from 720p
