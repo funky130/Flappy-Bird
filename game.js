@@ -61,10 +61,12 @@ document.addEventListener("keydown", () => {
   if (!gameStarted) return gameStarted = true;
   bird.velocity = bird.lift;
 });
-canvas.addEventListener("mousedown", () => {
+canvas.addEventListener("touchstart", (e) => {
+  e.preventDefault(); // 🔒 Prevent default zooming & scrolling
   if (!gameStarted) return gameStarted = true;
   bird.velocity = bird.lift;
-});
+}, { passive: false }); // passive:false is essential for e.preventDefault() to work
+
 
 // Add pipes
 function addPipe() {
